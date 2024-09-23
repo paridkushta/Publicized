@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Parid Kushta - JS Assignment 3 - Likes</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="resources/css/reset.css">
+    <link rel="stylesheet"
+          type="text/css"
+          href="resources/css/style.css">
+    <script src="resources/js/script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <h1 class="nav-text">Network</h1>
+        </nav>
+        <h1 main-text>Your Feed</h1>
+        <div class="feed">
+            <div class="profile">
+                <img src="resources/media/profile-picture.png">
+                <a>Add an avatar</a>
+                <h1>James Doe</h1>
+            </div>
+            <div class="content">
+                <div class="content-card">
+                    <div class="content-card-top-row">
+                        <h1 class="content-card-name">Neil M</h1>
+                        <h2><span id="like-1">9</span> <span id="like-text-1">likes</span></h2>
+                        <button class="content-card-button"
+                                onclick="liking('1', '1', this)"
+                                type="button">Like</button>
+                    </div>
+                    <div class="content-card-bottom-row">
+                        <p>I just set up this new discord bot, let me know what you all think. <a>link</a></p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card-top-row">
+                        <h1 class="content-card-name">Nichole K</h1>
+                        <h2><span id="like-2">12</span> <span id="
+                                  like-text-2">likes</span></h2>
+                        <button class="content-card-button"
+                                onclick="liking('2', '2', this)"
+                                type="button">Like</button>
+                    </div>
+                    <div class="content-card-bottom-row">
+                        <p>Just finished my <a>next comic</a>, check it out.</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="content-card-top-row">
+                        <h1 class="content-card-name">Jim R</h1>
+                        <h2><span id="like-3">9</span> <span id="like-text-3">likes</span></h2>
+                        <button class="content-card-button"
+                                onclick="liking('3', '3', this)"
+                                type="button">Like</button>
+                    </div>
+                    <div class="content-card-bottom-row">
+                        <p>I can't stop listening to the <a>new album</a>. Who else is liking it?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

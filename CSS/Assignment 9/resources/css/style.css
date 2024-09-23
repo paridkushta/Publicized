@@ -1,0 +1,477 @@
+/* |||||||||||||||||| Start of body section |||||||||||||||||| */
+
+body
+{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(255, 255, 255);
+}
+
+/* |||||||||||||||||| End of body section |||||||||||||||||| */
+
+/* |||||||||||||||||| Start of nav section |||||||||||||||||| */
+
+nav
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: calc(100% - 32px);
+
+   padding: 16px;
+
+   color: white;
+   background-color: black;
+}
+
+#nav-container
+{
+   display: flex;
+   flex: 0 1 700px;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+#nav-links
+{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 20px;
+
+}
+
+#nav-links>a
+{
+   display: flex;
+   flex: 0 0 1;
+}
+
+#nav-links>a:hover
+{
+   color: rgb(0, 204, 255);
+}
+
+#nav-links>a:active
+{
+   color: rgb(255, 255, 255);
+}
+
+#nav-links :nth-child(1)
+{
+   font-size: xx-large;
+}
+
+#nav-links :nth-child(2), :nth-child(4)
+{
+   color: rgb(160, 160, 160);
+}
+
+#nav-button
+{
+   padding: 6px;
+
+   display: flex;
+   flex-shrink: 0;
+
+   background-color: rgb(0, 140, 175);
+}
+
+#nav-button:hover
+{
+   background-color: rgb(0, 204, 255);
+}
+
+#nav-button:active
+{
+   background-color: rgb(0, 140, 175);
+}
+
+/* |||||||||||||||||| End of nav section |||||||||||||||||| */
+
+/* |||||||||||||||||| Start of main section |||||||||||||||||| */
+
+#main
+{
+   flex: 0 1 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+   max-width: 700px;
+   width: calc(100% - 32px);
+
+   margin: 16px;
+   gap: 16px;
+}
+
+
+
+#primary
+{
+   display: flex;
+   flex-flow: column;
+
+   gap: 16px;
+
+   flex: 3;
+}
+
+#secondary
+{
+   display: flex;
+   flex-flow: column;
+
+   gap: 16px;
+
+   flex: 2;
+}
+
+#user
+{
+
+   min-width: 100px;
+}
+
+#user *
+{
+   color: black;
+}
+
+#user-banner
+{
+   height: 80px;
+   background-color: rgb(0, 140, 175);
+}
+
+#user-content
+{
+   height: 186px;
+   padding: 0 16px;
+
+   border-bottom: 4px lightgray solid;
+   border-left: 4px lightgray solid;
+   border-right: 4px lightgray solid;
+}
+
+#user-content>*
+{
+   position: relative;
+   top: -44px;
+}
+
+#user-content img
+{
+   height: 80px;
+   border-radius: 50%;
+}
+
+#user-content h1
+{
+   font-size: x-large;
+   font-weight: 600;
+}
+
+#user-content h2
+{
+   display: flex;
+
+   font-size: medium;
+
+   gap: 4px;
+}
+
+#user-content h2 img
+{
+   height: 12px;
+}
+
+#user-content p:not(:nth-last-of-type(1))
+{
+   margin-bottom: 4px;
+}
+
+#user-content p:nth-of-type(2)
+{
+   margin-bottom: 12px;
+}
+
+#user-content a
+{
+   color: rgb(0, 100, 214);
+   text-decoration: underline;
+}
+
+#user-content a img
+{
+   height: 12px;
+   margin-right: 4px;
+}
+
+#user-content a:hover
+{
+   color: rgb(60, 151, 255);
+}
+
+#user-content a:active
+{
+   color: black;
+}
+
+#education
+{
+   min-width: 350px;
+}
+
+#education-banner
+{
+   display: flex;
+   align-items: center;
+
+   padding: 16px;
+
+   color: white;
+   background-color: rgb(60, 60, 60);
+
+   font-size: large;
+   font-weight: 600;
+}
+
+#education-content
+{
+   padding: 16px;
+
+   border-bottom: 4px lightgray solid;
+   border-left: 4px lightgray solid;
+   border-right: 4px lightgray solid;
+}
+
+#education-content>h2
+{
+   margin-bottom: 8px;
+
+   color: black;
+
+   font-size: larger;
+   font-weight: 500;
+}
+
+#education-content>h3
+{
+   margin-bottom: 8px;
+
+   color: gray;
+
+   font-size: large;
+   font-weight: 500;
+}
+
+#education-content>p
+{
+   color: black;
+
+   font-size: medium;
+   font-weight: 500;
+}
+
+#requests-banner
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 16px;
+
+   color: white;
+   background-color: rgb(60, 60, 60);
+
+   font-size: large;
+   font-weight: 600;
+}
+
+#requests-banner>h1:nth-of-type(1)
+{
+   padding: 0 5px;
+   margin-right: 8px;
+
+   color: black;
+   background-color: lightgray;
+
+   border-radius: 50%;
+   border: 4px solid lightgray;
+}
+
+#requests-content
+{
+   padding: 16px;
+
+   border-bottom: 4px lightgray solid;
+   border-left: 4px lightgray solid;
+   border-right: 4px lightgray solid;
+}
+
+#requests-content>*:not(:nth-last-child(1))
+{
+   margin-bottom: 16px;
+}
+
+.requests-row
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.requests-under-row
+{
+   height: 36px;
+
+   display: flex;
+   align-items: center;
+
+   font-size: large;
+   font-weight: 600;
+}
+
+.requests-under-row :not(:nth-last-child(1))
+{
+   margin-right: 8px;
+}
+
+.requests-under-row a
+{
+   height: inherit;
+
+   display: flex;
+   align-items: center;
+}
+
+.requests-under-row a :hover
+{
+   color: rgb(0, 140, 175);
+}
+
+.requests-under-row a :active
+{
+   color: black;
+}
+
+.requests-under-row img
+{
+   border-radius: 50%;
+}
+
+#connections
+{
+   min-width: 245px;
+}
+
+#connections-banner
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   padding: 16px;
+
+   color: white;
+   background-color: rgb(60, 60, 60);
+
+   font-size: large;
+   font-weight: 600;
+}
+
+#connections-banner>h1:nth-of-type(1)
+{
+   padding: 0 5px;
+   margin-right: 8px;
+
+   color: black;
+   background-color: lightgray;
+
+   border-radius: 50%;
+   border: 4px solid lightgray;
+}
+
+#connections-content
+{
+   padding: 16px;
+
+   border-bottom: 4px lightgray solid;
+   border-left: 4px lightgray solid;
+   border-right: 4px lightgray solid;
+}
+
+#connections-content :not(:nth-last-child(1))
+{
+   margin-bottom: 8px;
+}
+
+.connections-row
+{
+   height: 36px;
+
+   display: flex;
+   align-items: center;
+
+   color: black;
+   font-size: large;
+   font-weight: 600;
+}
+
+.connections-row :not(:nth-last-child(1))
+{
+   margin-right: 8px;
+}
+
+.connections-row img
+{
+   border-radius: 50%;
+}
+
+.connections-row a
+{
+   height: inherit;
+
+   display: flex;
+   align-items: center;
+}
+
+.connections-row a :hover
+{
+   color: rgb(0, 140, 175);
+}
+
+.connections-row a :active
+{
+   color: black;
+}
+
+#connections-link
+{
+   padding: 16px;
+
+   border-bottom: 4px lightgray solid;
+   border-left: 4px lightgray solid;
+   border-right: 4px lightgray solid;
+}
+
+#connections-link a
+{
+   color: rgb(0, 100, 214);
+   text-decoration: underline;
+}
+
+#connections-link a:hover
+{
+   color: rgb(60, 151, 255);
+}
+
+#connections-link a:active
+{
+   color: black;
+}

@@ -1,0 +1,90 @@
+/* |||||||||||||||||| CSS reset start |||||||||||||||||| */
+
+*, *:before, *:after
+{
+   border: 0;
+   margin: 0;
+   padding: 0;
+   line-height: 1;
+   max-width: 100%;
+   box-sizing: border-box;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   padding-block-start: 0;
+   padding-block-end: 0;
+   padding-inline-start: 0;
+   padding-inline-end: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+   display: block;
+}
+
+body
+{
+   line-height: 1;
+}
+
+ol, ul
+{
+   list-style: none;
+}
+
+blockquote, q
+{
+   quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after
+{
+   content: '';
+   content: none;
+}
+
+table
+{
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* |||||||||||||||||| CSS reset end |||||||||||||||||| */
+
+.row
+{
+   display: flex;
+   margin: 8px;
+}
+
+.col
+{
+   background-color: rgb(66, 148, 132);
+   flex: 1;
+   text-align: center;
+   padding: 8px;
+}
+
+.col-2
+{
+   background-color: rgb(66, 148, 132);
+   flex: 2;
+   text-align: center;
+   padding: 8px;
+}
+
+.col-3
+{
+   background-color: rgb(66, 148, 132);
+   flex: 3;
+   text-align: center;
+   padding: 8px;
+}
+
+.col, .col-2, .col-3:nth-last-child(n+2)
+{
+   margin-right: 8px;
+}
